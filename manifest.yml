@@ -1,0 +1,10 @@
+applications:
+  - name: search-service
+    path: target/ctm-search-service-1.0.0.jar
+    buildpack: dicf_java_buildpack_432
+    stack: cflinuxfs3
+    instances: 1
+    memory: 2G
+    disk_quota: 2G
+    env:
+      search.type: EMAIL
